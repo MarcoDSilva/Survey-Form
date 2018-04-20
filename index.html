@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<!-- CDN to test if the project has the requirements to pass the project stories -->
+<script src="https://gitcdn.link/cdn/freeCodeCamp/testable-projects-fcc/089ab0dcb59efc76ee0e69e73e4d2f5d39c32fd1/build/bundle.js"></script>
+
+<style>
+	html {
+		font-family: Georgia, Palatino, Helvetica;
+		background-color:#512DA8;
+		text-align:center;
+		color:#D1C4E9;
+		font-size:16px;
+	}
+	
+	#main { 
+		margin: auto;
+		max-width: 700px;
+		border-radius: 5px;
+		background-color:#673AB7;	
+		padding-bottom: 30px;
+	}
+	
+	p{
+		padding: 20px 0px 0px 0px;
+		font-size: 18px;		
+	}
+	
+	#name, #email, #number{
+		font-size:16px;
+		margin-top:15px;
+		margin-bottom: 5px;
+		}
+	
+	#submit {
+		margin-top:15px;
+		background-color:#009688;
+		border:none;
+		border-radius: 9px;	
+		width:100px;
+		height:40px;
+		color:#FFFFFF;
+		font-size:18px;
+		transition-duration: 0.6s;
+	}
+	
+	#submit:hover{
+		background-color:#D1C4E9;
+	}
+	
+	#dropdown {
+		margin-top:15px;
+		font-size: 16px;
+	}
+	
+	#spells input {
+		margin-top:8px;
+	}
+	
+</style>
+
+<html>
+	<h1 id="title">Survey Form</h1>
+	
+	<div id="main">
+		<p id="description">Give us your opinion about this Loreps:</p>
+		
+		<form id="survey-form">
+			
+			<div id="label">
+				<label id="name-label">*Name <input type ="text" id="name" placeholder="Enter your Name" required></label>
+			</div>
+			
+			<div id="label">
+				<label id="email-label">Email <input type ="email" id="email" placeholder="Enter your Email" required></label>
+			</div>
+			
+			<div>
+				<label id="number-label">*Age <input type ="number" id="number" placeholder="Enter your Age" min="13" max="65" required></label>
+			</div>
+				
+		<div id="dropdown">
+			<p>Which of these pieces of fruit you would rather eat?</p>
+			<select name="options">
+				<option value="banana">Apple</option>
+				<option value="banana">Banana</option>
+				<option value="banana">Coconut</option>
+				<option value="banana">Pear</option>
+				<option value="banana">Other</option>
+			</select> 
+		</div>
+			
+		<!-- one or multiple choice -->
+		<div id="rec">
+			<p id="recomend">*Would you recommend our smoothies to your friends?</p>
+			<div><input type="radio" name="recommendation" value="Absolutely">Absolutely</div>
+			<div><input type="radio" name="recommendation" value="Maybe">Maybe</div>
+			<div><input type="radio" name="recommendation" value="Not at all">Not at all</div>
+		</div>
+			
+			<!-- changing this to a list instead of using divs -->
+		<div id="spells">
+			<p id="checkbox-form">*Which of those Nulla spellcasts would you use to defeat an ogre?</p>
+			<div><input type="checkbox" name="recommendation" value="1">Nulla vulputate.</div>
+			<div><input type="checkbox" name="recommendation" value="2">Nulla vulputate.</div>
+			<div><input type="checkbox" name="recommendation" value="3">Nulla vulputate.</div>
+			<div><input type="checkbox" name="recommendation" value="5">Nulla vulputate.</div>
+			<div><input type="checkbox" name="recommendation" value="6">Nulla vulputate.</div>
+		</div>
+			
+		<p id="opinion">*Any last words about this survey?</p>
+			
+		<textarea id="opinion" name="last" placeholder="give us your last opinion" rows="4" cols="35"></textarea>
+			<br>
+		<input type="submit" id="submit" name="submit" value="submit">
+		</form>
+		
+	</div>
+</html>
